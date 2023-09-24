@@ -1,0 +1,153 @@
+html,
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 150vh; 
+}
+
+
+.left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    flex-basis: 30%;
+    background-color: lightblue;
+    box-sizing: border-box;/*The actual size of the element will be the same as the value you set and will not be affected by borders and inner margins */
+  }
+  .left img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: auto;
+    height: 220px; 
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .links a {
+    text-decoration: none; /* remove underline */
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    padding: 20px 100%; /*set the padding to 20px on the top and bottom, and 100% of the maximumwidth on the left and right*/
+    width: 100%;
+    border-radius: 50px;
+    color: black;
+    text-align: center;
+
+  }
+  .links a:hover {
+    color:lightcoral;
+    background-color: #ddd;
+  }
+  .social.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid gray;
+  }
+  .social.icon a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    color: lightcoral;
+    font-size: 50px;
+  }
+  .social.icon a:hover {
+    background-color: #ddd;
+  }
+  .top-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+
+
+
+.container {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.comment-section {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 700px;
+}
+
+.comment {
+    display: flex;
+    padding: 20px 40px;
+    margin-bottom: 100px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message {
+    font-size: 25px;
+}
+
+
+
+.commentplace {
+    margin-top: 0;
+    padding-top: 0;
+    flex-grow: 1;
+    background-color: lightgray;
+    display: flex;
+  }
+.comment-box p{
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: bold;
+} 
+  .comment-box textarea {
+    margin-left: 10px;
+    width: 1200px;
+    height: 100px;
+    font-size: 25px;
+  }
+  .submit-button {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 40px;
+  }
+
+  
+
+
+

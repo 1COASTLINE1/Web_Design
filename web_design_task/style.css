@@ -1,0 +1,608 @@
+/* index page*/
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  background-color: #333; 
+  color: #fff; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px; 
+  height: 10vh; 
+  width: 100%; 
+  position: fixed; 
+}
+
+.form1 {
+  display: flex; 
+  justify-content: center; 
+  text-align: center;
+  flex: 1; 
+}
+
+.form1 a {
+  padding: 10px 20px; 
+  text-decoration: none; 
+  color: lightblue; 
+  font-size: 40px; 
+}
+
+.form1 a:hover {
+  color: lightcoral; 
+}
+
+.form2 {
+  display: flex;
+  align-items: flex-end; 
+}
+
+.form2 a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: lightblue;
+  font-size: 35px;
+}
+.form2 a:hover {
+  color: lightcoral;
+}
+
+.search-container {
+  display: flex; 
+  align-items: center; 
+  order: -1; 
+}
+
+.search-input {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 18px;
+  width: 200px;
+  margin-right: 2px;
+}
+
+.search-button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: lightcoral;
+}
+
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 0px;
+  bottom: 0; 
+  height: 10%;
+  width: 100%; 
+  position: fixed;  
+}
+
+.social-icons {
+  text-align: center;
+  
+}  
+.social-icons a {
+ display: inline-block;
+ margin: 0 65px;/*0 refers to the top and bottom margin, 65px refers to the left and right margin*/
+ color: #555;
+ font-size: 40px;
+ margin-right: 20;
+}  
+.social-icons a:hover {
+ color: lightcoral;
+}
+.social-icons p {
+ font-size: 20px;
+  color: #555;
+}
+* {box-sizing: border-box;}/*the width and height of the element will include the sum of the content*/
+body {font-family: Verdana, sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  display: flex;
+  position: relative;
+  top: 10vh; /* The height from the top, set it using the height of the header*/
+  bottom: 10vh; 
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mySlides {
+  max-width: 80%;
+  max-height: 70%;
+}
+
+.mySlides img {
+  max-width: 100%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+
+
+
+/*Success page*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.Success-container{
+    display: flex;
+    height: 100vh; 
+  }
+  .left {
+    margin: 0;
+    padding: 0;
+    flex-basis: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute the space evenly between the elements */
+    align-items: center; /* Center align on the cross axes of the container */
+    background-color: #f1f1f1;
+  }
+  .photo1,
+  .photo2 {
+    max-width: 100%;
+    max-height: 33.33%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+
+  
+.right {
+    margin: 0;
+    padding: 0;
+    flex-basis: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #f1f1f1;
+  }
+
+  .middle {
+    position : relative;
+    overflow: auto;
+    height: 100%; /*Make the container height fill the visible area */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .Success-container a i {
+    font-size: 100px;
+    color: lightcoral;
+  }
+  .homepageTransformer {
+    transition: transform 1s ease;/*transition property, duration, timing function, delay*/
+    transform: translateY(0);/*translateY() method moves an element vertically on the Y-axis,0 means keep it static on the Y-axis*/  
+  }
+
+  .Success-container .middle h1 {
+    font-size: 64px;
+  }
+  
+  .Success-container .middle p {
+    font-size: 38px;
+    margin: 20px;
+  }
+  
+  #homepageTransformer {
+    font-size: 20px;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    background-color: lightblue ;
+  }
+  #homepageTransformer:hover {
+    color: #f1f1f1;
+    background-color: lightcoral;
+  }
+  
+  #homepageTransformer[data-clicked="true"] {
+    font-size: 30px; 
+    padding: 20px;
+  }
+
+  .rule-item {
+    font-size: 25px; 
+    margin: 20px;
+  }
+
+
+
+
+
+
+
+  /*Movie info page*/
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.head {
+  position: relative;
+  display: flex;
+  background-color: white;
+  height: 90vh; 
+}
+
+
+.poster-container {
+  margin: 0;
+  padding: 0;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  background-color: lightgray;
+}
+
+.poster-container img {
+  padding: 10px;
+  max-width: 95%;
+  max-height: 80%; 
+}
+
+.play-button {
+  font-size: 100px;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  color: #fff;
+  margin-top: 0px;
+}
+
+.play-button:hover {
+  color: black;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.star {
+  font-size: 50px; 
+  color: black; 
+  margin-right: 5px; 
+  background-color: transparent;
+}
+
+.star.active {
+  color: lightcoral; 
+}
+
+
+.movie-info {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.circle {
+  width: 200px;
+  height: 50px;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.synopsis {
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.movie-info-text {
+  margin-bottom: 10px;
+}
+
+.movie-details {
+  font-size: 23px;
+}
+
+.movie-details .rating-label,
+.movie-details .genre-label,
+.movie-details .language-label,
+.movie-details .director-label,
+.movie-details .producer-label,
+.movie-details .writer-label,
+.movie-details .release-date-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.movie-details .rating-value,
+.movie-details .genre-value,
+.movie-details .language-value,
+.movie-details .director-value,
+.movie-details .producer-value,
+.movie-details .writer-value,
+.movie-details .release-date-value {
+  margin-bottom: 20px;
+}
+
+
+/* 设置导航栏样式 */
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navbar a {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+}
+
+.navbar a:hover {
+  background-color: lightpink;
+}
+
+
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 0px;
+  bottom: 0; 
+  height: 10vh; 
+  width: 100%; 
+  position: fixed;   
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 65px;
+  color: #555;
+  font-size: 40px;
+
+}
+
+.social-icons a:hover {
+  color: lightcoral;
+}
+
+.social-icons p {
+  margin-top: 5px; ;
+  font-size: 25px;
+  color: #555;
+}
+
+
+/* button to forum */
+.discussion-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);/* make the button in the centre */
+}
+
+.discussion-button button {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.discussion-button button:hover {
+  background-color: #e74c3c;
+}
+
+
+/*Log in page*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.MovieParadise-container {
+  display: flex;
+  height: 100vh; 
+}
+
+.left {
+  margin: 0;
+  padding: 0;
+  flex-basis: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.photo1,
+.photo2 {
+  max-width: 100%;
+  max-height: 33.33%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.right {
+  margin: 0;
+  padding: 0;
+  flex-basis: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.middle {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; 
+  background-color: lightblue;
+}
+
+.links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 40px;
+    margin-top: 30px;
+  }
+  
+  .links a {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .links a:hover {
+    color: #000;
+  }
+.left,
+.right {
+  background-color: #f1f1f1;
+}
+
+.MovieParadise-container a i {
+  font-size: 100px;
+  color: lightcoral;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.loginbox-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginbox {
+  width: 520px;
+  height: 720px;
+  background: lightblue;
+  color: #000;
+  box-sizing: border-box;
+  padding: 70px 30px;
+  font-size: 24px;
+}
+
+.loginbox input[type="text"],
+.loginbox input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000;
+  font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  margin-left: -110px;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 400px;
+  background: lightcoral;
+  color: #fff;
+  font-size: 40px;
+  border-radius: 80px;
+}
+
+.loginbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: lightgreen;
+  color: #000;
+}
+
+.loginbox a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: px;
+    color: darkgrey;
+    margin: 10px;
+}
+
+.loginbox a:hover {
+  color: lightcoral;
+}
+
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sucess Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="change.js"></script>
+<body>
+    <div class="Success-container">
+        <div class="left">
+        <img src="image/zhangweizuo.jpg" alt="MovieParadise" class="photo1">
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <img src="image/zhangweizuo.jpg"  alt="MovieParadise" class="photo2">
+        </div>
+        <div class="middle">
+            <h1>Congratulations!</h1>
+            <p>Please obey our rules.</p>
+            <button id="homepageTransformer">Back to Homepage</button>
+        </div>
+        <div class="right">
+        <img src="image/zhangweiyou.jpg" alt="MovieParadise" class="photo1">
+        <a href="https://web.wechat.com/"><i class="fab fa-weixin"></i></a>
+        <img src="image/zhangweiyou.jpg"  alt="MovieParadise" class="photo2">
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                document.getElementById('homepageTransformer').addEventListener("click", function() {
+                    changeText();
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

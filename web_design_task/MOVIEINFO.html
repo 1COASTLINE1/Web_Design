@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="change.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <div class="poster-container">
+            <img src="image/JohnWick.jpg" alt="Movie Poster">
+            <div class="play-button" onclick="player()">&#9658;</div>
+            <div class="rating">
+                <span class="star" onclick="toggleStars(0)" onmouseover="highlightStars(0)" onmouseout="resetStars()">&#9734;</span>
+                <span class="star" onclick="toggleStars(1)" onmouseover="highlightStars(1)" onmouseout="resetStars()">&#9734;</span>
+                <span class="star" onclick="toggleStars(2)" onmouseover="highlightStars(2)" onmouseout="resetStars()">&#9734;</span>
+                <span class="star" onclick="toggleStars(3)" onmouseover="highlightStars(3)" onmouseout="resetStars()">&#9734;</span>
+                <span class="star" onclick="toggleStars(4)" onmouseover="highlightStars(4)" onmouseout="resetStars()">&#9734;</span>
+              </div>
+        </div>
+              <div class="movie-info">
+                <div class="circle">Movie Info</div>
+                <div class="synopsis">
+                    John Wick (Keanu Reeves) uncovers a path to defeating The High Table.<br>
+                    But before he can earn his freedom.<br>
+                    Wick must face off against a new enemy with powerful alliances across the globe.
+                  </div>
+                <div class="movie-details">
+                  <div class="ratings">
+                    <div class="rating-label">Rating:</div>
+                    <div class="rating-value">R (Some Language|Pervasive Strong Violence)</div>
+                  </div>
+                  <div class="genre">
+                    <div class="genre-label">Genre:</div>
+                    <div class="genre-value">Action</div>
+                  </div>
+                  <div class="language">
+                    <div class="language-label">Original Language:</div>
+                    <div class="language-value">English</div>
+                  </div>
+                  <div class="director">
+                    <div class="director-label">Director:</div>
+                    <div class="director-value">Chad Stahelski</div>
+                  </div>
+                  <div class="producer">
+                    <div class="producer-label">Producer:</div>
+                    <div class="producer-value">Basil Iwanyk, Erica Lee, Chad Stahelski</div>
+                  </div>
+                  <div class="writer">
+                    <div class="writer-label">Writer:</div>
+                    <div class="writer-value">Shay Hatten, Michael Finch</div>
+                  </div>
+                  <div class="release-date">
+                    <div class="release-date-label">Release Date (Theaters):</div>
+                    <div class="release-date-value">Mar 24, 2023 Wide</div>
+                  </div>
+                </div>
+              </div>
+              <div class="discussion-button">
+                <button onclick="joinDiscussion()">Click me to join discussion</button>
+              </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="LOGIN.html">Log in</a>
+            <a href="Create.html">Register</a>
+            <a href="FORUM.html">Forum</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://web.wechat.com/"><i class="fab fa-weixin"></i></a>
+          <a href="https://web.wechat.com/"><i class="fab fa-weibo"></i></a>
+          <p class="footer-item">Contact Us</p>
+        </div>
+    </footer>
+</body>
+</html>
